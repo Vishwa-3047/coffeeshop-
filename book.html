@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking..?</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="shortcut icon" href="imgs/istockphoto-1319058954-612x612.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+    <div class="container">
+        <div class="container-time">
+             <h2 class="heading">Opening Time</h2> 
+             <h3 class="heading-days">Monday-Friday</h3>
+             <p>7am-10am(Morning)</p>
+             <p>5pm-10pm(Evening)</p>
+
+             <h3 class="heading-days">Saturday & Sunday</h3>
+             <p>7am-12pm(Morning)</p>
+             <p>3pm-10pm(Evening)</p>
+
+             <hr>
+
+             <h4 class="heading-phone">Call Us : (+91) 7598703119</h4>
+        </div>
+        <div class="container-form">
+            <form action="https://formspree.io/f/xleqkqjo" method="POST" >
+                <h5 class="heading heading-yellow">Start Reservation Now</h5> 
+                <div class="form-fields">
+                    <p>Your Name</p>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-fields">
+                    <p>Your Email</p>
+                    <input type="email" name="mailid" placeholder="Your Email" required>
+                </div>
+                <div class="form-fields">
+                    <p>Date</p>
+                    <input type="date" name="date" required>
+                </div>
+                <div class="form-fields">
+                    <p>Time</p>
+                    <input type="time" name="time" required>
+                </div>
+                <div class="form-fields">
+                    <p>How Many People</p>
+                    <select name="select" name="select" id="#" required>
+                        <option value="">Select</option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="6+">6+ People</option>
+                    </select>
+                </div>
+
+                <button class="btn">Submit</button>
+             </form>
+        </div>
+    </div>
+</body>
+</html>
+
+
+.container {
+    max-width: 400px;
+    margin: 90px auto;
+    padding: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.input-left {
+    width: 30%;
+}
+
+.group {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-right {
+    width: 70%;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+label {
+    display: inline;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: inline;
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
